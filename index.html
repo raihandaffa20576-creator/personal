@@ -1,111 +1,212 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raihan Daffa — Portfolio</title>
   <meta name="description" content="Portfolio singkat Raihan Daffa — Waiter & Junior Landing Page Freelancer." />
-  <title>Raihan Daffa - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = {theme: {extend: {colors:{brand:'#25D366'}}}, darkMode: 'class'}</script>
   <style>
-    :root { color-scheme: dark; }
-    * { box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #121212; color: #f5f5f5; }
-    a { color: inherit; }
-    header { background: #1e1e1e; color: #fff; padding: 1rem; text-align: center; }
-    header h1 { margin: 0; font-size: 2rem; }
-    header p { margin: 0.5rem 0 0; font-size: 1.1rem; color: #d4d4d4; }
-    main { max-width: 900px; margin: auto; padding: 1rem; }
-    section { margin-bottom: 2rem; }
-    h2 { border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin: 0 0 1rem; }
-    ul { padding-left: 1.2rem; margin: 0.5rem 0 0; }
-    .skills { display: flex; flex-wrap: wrap; gap: .5rem; }
-    .skills span { display: inline-block; background: #2a2a2a; padding: 0.4rem 0.8rem; border-radius: 999px; font-size: 0.9rem; color: #f5f5f5; }
-    .projects, .experience { display: grid; gap: 1rem; }
-    @media (min-width: 768px) { .projects { grid-template-columns: repeat(2, 1fr); } }
-    .card { background: #1e1e1e; padding: 1rem; border-radius: 0.75rem; box-shadow: 0 2px 5px rgba(0,0,0,0.4); }
-    .whatsapp-btn { display: inline-block; background: #25D366; color: #0c2918; padding: 0.6rem 1rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; transition: filter .2s; }
-    .whatsapp-btn:focus { outline: 2px solid #25D366; outline-offset: 2px; }
-    .whatsapp-btn:hover { filter: brightness(0.95); }
-    .muted { color: #c7c7c7; }
+    html{scroll-behavior:smooth}
+    .container{max-width:1100px}
   </style>
 </head>
-<body>
-  <header>
-    <h1>Raihan Daffa</h1>
-    <p class="muted">Waiter & Junior Landing Page Developer</p>
+<body class="dark bg-neutral-900 text-neutral-100 antialiased">
+  <header class="sticky top-0 z-40 bg-neutral-900/90 backdrop-blur border-b border-neutral-800">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-neutral-100 text-neutral-900 grid place-items-center font-bold">RD</div>
+        <div>
+          <p class="font-semibold leading-tight">Raihan Daffa</p>
+          <p class="text-sm text-neutral-400">Waiter & Junior Landing Page Freelancer</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-2 text-sm" aria-label="Primary">
+        <a href="#about" class="px-3 py-2 rounded-xl hover:bg-neutral-800">Tentang</a>
+        <a href="#skills" class="px-3 py-2 rounded-xl hover:bg-neutral-800">Keahlian</a>
+        <a href="#projects" class="px-3 py-2 rounded-xl hover:bg-neutral-800">Project</a>
+        <a href="#experience" class="px-3 py-2 rounded-xl hover:bg-neutral-800">Pengalaman</a>
+        <a href="#contact" class="px-3 py-2 rounded-xl hover:bg-neutral-800">Kontak</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section id="about" aria-labelledby="about-title">
-      <h2 id="about-title">Tentang Saya</h2>
-      <p>Saya profesional hospitality dengan pengalaman sebagai waiter di lingkungan kerja yang cepat. Saat ini saya juga mengerjakan proyek landing page sebagai freelancer pemula, fokus pada layout yang rapi, copy singkat, dan CTA yang jelas.</p>
+
+  <main class="container mx-auto px-4 pt-10 md:pt-16 pb-12">
+    <section class="grid md:grid-cols-[1.1fr,0.9fr] gap-8 items-center">
+      <div class="space-y-5">
+        <span class="inline-block text-sm text-neutral-400">Tangerang, Indonesia</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Halo, saya <span class="text-neutral-100">Raihan Daffa</span>.</h1>
+        <p class="text-lg text-neutral-300 max-w-2xl">Saya membuat landing page yang rapi dan mudah dibaca. Latar belakang di hospitality membuat saya peka pada pengalaman pengguna: jelas, cepat, dan ramah.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#projects" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-neutral-100 text-neutral-900">Lihat Project</a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-neutral-700">Hubungi Saya</a>
+        </div>
+      </div>
+
+      <aside class="rounded-3xl border shadow-sm p-6 bg-neutral-800">
+        <h3 class="font-semibold text-lg mb-4">Info Singkat</h3>
+        <ul class="space-y-3 text-sm text-neutral-300">
+          <li class="flex items-center justify-between"><span>Role</span><span class="text-neutral-300">Waiter • Junior Landing Page</span></li>
+          <li class="flex items-center justify-between"><span>Status</span><span class="text-neutral-300">Freelance (pemula) • 2025–sekarang</span></li>
+          <li class="flex items-center justify-between"><span>Pendidikan</span><span class="text-neutral-300">SMK, lulus 2024</span></li>
+          <li class="flex items-center justify-between"><span>Bahasa</span><span class="text-neutral-300">Indonesia</span></li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full border text-xs">Copywriting Dasar</span>
+          <span class="px-3 py-1 rounded-full border text-xs">Layouting</span>
+          <span class="px-3 py-1 rounded-full border text-xs">UX Microcopy</span>
+          <span class="px-3 py-1 rounded-full border text-xs">Hospitality Mindset</span>
+        </div>
+      </aside>
     </section>
 
-    <section id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Keahlian</h2>
-      <div class="skills" role="list">
-        <span role="listitem">Customer Service</span>
-        <span role="listitem">Teamwork</span>
-        <span role="listitem">Time Management</span>
-        <span role="listitem">Order Taking & POS</span>
-        <span role="listitem">Komunikasi Efektif</span>
-        <span role="listitem">Basic HTML/CSS</span>
-        <span role="listitem">Landing Page Design</span>
+    <section id="about" class="mt-8">
+      <div class="rounded-3xl border bg-neutral-800 p-6 md:p-8">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2">Tentang</h2>
+        <p class="text-neutral-300 max-w-3xl">Saya adalah pekerja hospitality dengan pengalaman sebagai waiter/server dan kini merintis sebagai freelancer pembuat landing page. Fokus saya pada struktur konten sederhana, headline yang jelas, dan call-to-action yang tidak membingungkan. Saya mengerjakan proses mulai riset singkat, menyusun copy, sampai publish.</p>
       </div>
     </section>
 
-    <section id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Project</h2>
-      <div class="projects">
-        <article class="card" aria-labelledby="p1-title">
-          <h3 id="p1-title">Landing Page — Toko Peralatan Gym</h3>
-          <p class="muted">Halaman promosi alat home workout dengan hero jelas, highlight benefit, dan CTA beli.</p>
+    <section id="skills" class="mt-10">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Keahlian Inti</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="rounded-3xl border bg-neutral-800 p-6">
+          <h3 class="font-semibold text-lg mb-3">Hospitality / Waiter</h3>
+          <ul class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-neutral-300">
+            <li>Customer Service</li>
+            <li>Order Taking & POS</li>
+            <li>Table Management</li>
+            <li>Komunikasi Efektif</li>
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Upselling</li>
+            <li>Kebersihan & Food Safety</li>
+            <li>Cash Handling</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl border bg-neutral-800 p-6">
+          <h3 class="font-semibold text-lg mb-3">Landing Page (Pemula)</h3>
+          <ul class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-neutral-300">
+            <li>Copywriting Dasar</li>
+            <li>Struktur Halaman (Hero → CTA)</li>
+            <li>Layout & Typography</li>
+            <li>Riset Cepat (Pain → Benefit)</li>
+            <li>Wireframing (Canva/Figma)</li>
+            <li>HTML/CSS dasar</li>
+            <li>SEO Dasar (judul, meta)</li>
+            <li>Optimasi CTA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mt-10">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Project Terpilih (4)</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="rounded-3xl border bg-neutral-800 p-6">
+          <h3 class="font-semibold text-lg">Landing Page — Toko Peralatan Gym</h3>
+          <p class="text-sm text-neutral-400 mt-2">Halaman promosi alat home workout: struktur hero jelas, highlight benefit, dan CTA beli sekarang.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1 rounded-full border">Hero + Benefit</span>
+            <span class="px-3 py-1 rounded-full border">CTA</span>
+            <span class="px-3 py-1 rounded-full border">Conversion Copy</span>
+          </div>
         </article>
-        <article class="card" aria-labelledby="p2-title">
-          <h3 id="p2-title">Landing Page — Anak Cerdas Printables</h3>
-          <p class="muted">Showcase produk coloring book & planner untuk orang tua, fokus kemudahan dan contoh halaman.</p>
+        <article class="rounded-3xl border bg-neutral-800 p-6">
+          <h3 class="font-semibold text-lg">Landing Page — Anak Cerdas Printables</h3>
+          <p class="text-sm text-neutral-400 mt-2">Showcase produk coloring book & planner untuk orang tua; fokus pada kemudahan pakai & contoh halaman.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1 rounded-full border">Produk Digital</span>
+            <span class="px-3 py-1 rounded-full border">Gallery</span>
+            <span class="px-3 py-1 rounded-full border">CTA Beli</span>
+          </div>
         </article>
-        <article class="card" aria-labelledby="p3-title">
-          <h3 id="p3-title">Landing Page — E-book Trading Pemula</h3>
-          <p class="muted">Copy singkat, layout clean, serta FAQ untuk menurunkan keberatan pembeli.</p>
+        <article class="rounded-3xl border bg-neutral-800 p-6">
+          <h3 class="font-semibold text-lg">Landing Page — E-book Trading Pemula</h3>
+          <p class="text-sm text-neutral-400 mt-2">Copy singkat, layout clean, dan section FAQ untuk menurunkan keberatan pembeli.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1 rounded-full border">FAQ</span>
+            <span class="px-3 py-1 rounded-full border">Dark Minimal</span>
+            <span class="px-3 py-1 rounded-full border">Download CTA</span>
+          </div>
         </article>
-        <article class="card" aria-labelledby="p4-title">
-          <h3 id="p4-title">Landing Page — Promo Kedai Kopi</h3>
-          <p class="muted">Promo musiman dengan menu unggulan dan tombol pesan cepat.</p>
+        <article class="rounded-3xl border bg-neutral-800 p-6">
+          <h3 class="font-semibold text-lg">Landing Page — Promo Kedai Kopi Lokal</h3>
+          <p class="text-sm text-neutral-400 mt-2">Page promo musiman dengan menu unggulan, testimoni singkat, dan tombol pesan via WhatsApp.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="px-3 py-1 rounded-full border">Menu Highlight</span>
+            <span class="px-3 py-1 rounded-full border">WA Order</span>
+            <span class="px-3 py-1 rounded-full border">Promo Section</span>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="experience" aria-labelledby="exp-title">
-      <h2 id="exp-title">Pengalaman</h2>
-      <div class="experience">
-        <article class="card" aria-labelledby="e1-title">
-          <h3 id="e1-title">Waiter/Server — Wakaka Gading Serpong (2023)</h3>
-          <ul>
-            <li>Melayani 50+ tamu per hari dengan sikap ramah</li>
-            <li>Koordinasi order untuk mempercepat perputaran meja</li>
-          </ul>
-        </article>
-        <article class="card" aria-labelledby="e2-title">
-          <h3 id="e2-title">Waiter/Server — NYX'S Lounge & Bar (2024)</h3>
-          <ul>
-            <li>Menjaga standar layanan di lingkungan cepat</li>
-            <li>Upselling menu untuk menaikkan nilai transaksi</li>
-          </ul>
-        </article>
-        <article class="card" aria-labelledby="e3-title">
-          <h3 id="e3-title">Freelance — Pembuat Landing Page (2025–sekarang)</h3>
-          <ul>
-            <li>Menyusun struktur halaman, menulis copy dasar, dan merapikan layout</li>
-            <li>Fokus pada CTA yang jelas dan alur baca singkat</li>
-          </ul>
-        </article>
+    <section id="experience" class="mt-10">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Pengalaman</h2>
+      <div class="relative pl-4">
+        <div class="absolute left-0 top-0 bottom-0 w-1 bg-neutral-700 rounded"></div>
+        <div class="space-y-6">
+          <div class="relative">
+            <div class="absolute -left-2 top-2 w-4 h-4 rounded-full bg-neutral-100"></div>
+            <div class="ml-4 rounded-3xl border bg-neutral-800 p-6">
+              <h3 class="font-semibold">Waiter/Server — Wakaka Gading Serpong <span class="text-neutral-400 font-normal">• 2023</span></h3>
+              <ul class="list-disc pl-5 text-sm text-neutral-300 mt-2 space-y-1">
+                <li>Melayani 50+ tamu per hari dengan sikap ramah.</li>
+                <li>Koordinasi order agar perputaran meja lebih cepat.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -left-2 top-2 w-4 h-4 rounded-full bg-neutral-100"></div>
+            <div class="ml-4 rounded-3xl border bg-neutral-800 p-6">
+              <h3 class="font-semibold">Waiter/Server — NYX'S Lounge & Bar <span class="text-neutral-400 font-normal">• 2024</span></h3>
+              <ul class="list-disc pl-5 text-sm text-neutral-300 mt-2 space-y-1">
+                <li>Menjaga standar layanan di lingkungan yang cepat.</li>
+                <li>Melakukan upselling untuk menaikkan nilai transaksi.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -left-2 top-2 w-4 h-4 rounded-full bg-neutral-100"></div>
+            <div class="ml-4 rounded-3xl border bg-neutral-800 p-6">
+              <h3 class="font-semibold">Freelance — Pembuat Landing Page <span class="text-neutral-400 font-normal">• 2025–Sekarang</span></h3>
+              <ul class="list-disc pl-5 text-sm text-neutral-300 mt-2 space-y-1">
+                <li>Merancang struktur, menulis copy dasar, dan menyusun layout.</li>
+                <li>Fokus pada CTA yang jelas dan alur baca yang singkat.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Kontak</h2>
-      <p class="muted">Email dan LinkedIn akan ditambahkan nanti.</p>
-      <a class="whatsapp-btn" href="https://wa.me/628567912130" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp dengan Raihan Daffa">Chat via WhatsApp</a>
+    <section id="contact" class="mt-10 mb-16">
+      <div class="rounded-3xl border bg-neutral-800 p-6 md:p-8">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2">Kontak</h2>
+        <p class="text-neutral-400 mb-4">LinkedIn & email akan ditambahkan nanti. Untuk sekarang, gunakan tombol WhatsApp di bawah.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://wa.me/628567912130" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-brand text-neutral-900 font-semibold">Chat via WhatsApp</a>
+          <button type="button" class="px-4 py-2 rounded-2xl border border-neutral-700 text-neutral-300" disabled>LinkedIn (segera)</button>
+          <button type="button" class="px-4 py-2 rounded-2xl border border-neutral-700 text-neutral-300" disabled>Email (segera)</button>
+        </div>
+      </div>
     </section>
+
+    <footer class="border-t border-neutral-800">
+      <div class="container mx-auto px-4 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="text-neutral-400">© <span id="year"></span> Raihan Daffa. Semua hak cipta dilindungi.</p>
+        <div class="flex items-center gap-3">
+          <a class="hover:underline text-neutral-300" href="#about">Tentang</a>
+          <a class="hover:underline text-neutral-300" href="#projects">Project</a>
+          <a class="hover:underline text-neutral-300" href="#contact">Kontak</a>
+        </div>
+      </div>
+    </footer>
   </main>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
