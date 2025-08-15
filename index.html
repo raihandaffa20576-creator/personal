@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio singkat Raihan Daffa — Waiter & Junior Landing Page Freelancer." />
+  <title>Raihan Daffa - Portfolio</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #121212; color: #f5f5f5; }
+    a { color: inherit; }
+    header { background: #1e1e1e; color: #fff; padding: 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 0.5rem 0 0; font-size: 1.1rem; color: #d4d4d4; }
+    main { max-width: 900px; margin: auto; padding: 1rem; }
+    section { margin-bottom: 2rem; }
+    h2 { border-bottom: 2px solid #333; padding-bottom: 0.5rem; margin: 0 0 1rem; }
+    ul { padding-left: 1.2rem; margin: 0.5rem 0 0; }
+    .skills { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .skills span { display: inline-block; background: #2a2a2a; padding: 0.4rem 0.8rem; border-radius: 999px; font-size: 0.9rem; color: #f5f5f5; }
+    .projects, .experience { display: grid; gap: 1rem; }
+    @media (min-width: 768px) { .projects { grid-template-columns: repeat(2, 1fr); } }
+    .card { background: #1e1e1e; padding: 1rem; border-radius: 0.75rem; box-shadow: 0 2px 5px rgba(0,0,0,0.4); }
+    .whatsapp-btn { display: inline-block; background: #25D366; color: #0c2918; padding: 0.6rem 1rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; transition: filter .2s; }
+    .whatsapp-btn:focus { outline: 2px solid #25D366; outline-offset: 2px; }
+    .whatsapp-btn:hover { filter: brightness(0.95); }
+    .muted { color: #c7c7c7; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Raihan Daffa</h1>
+    <p class="muted">Waiter & Junior Landing Page Developer</p>
+  </header>
+  <main>
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">Tentang Saya</h2>
+      <p>Saya profesional hospitality dengan pengalaman sebagai waiter di lingkungan kerja yang cepat. Saat ini saya juga mengerjakan proyek landing page sebagai freelancer pemula, fokus pada layout yang rapi, copy singkat, dan CTA yang jelas.</p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Keahlian</h2>
+      <div class="skills" role="list">
+        <span role="listitem">Customer Service</span>
+        <span role="listitem">Teamwork</span>
+        <span role="listitem">Time Management</span>
+        <span role="listitem">Order Taking & POS</span>
+        <span role="listitem">Komunikasi Efektif</span>
+        <span role="listitem">Basic HTML/CSS</span>
+        <span role="listitem">Landing Page Design</span>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Project</h2>
+      <div class="projects">
+        <article class="card" aria-labelledby="p1-title">
+          <h3 id="p1-title">Landing Page — Toko Peralatan Gym</h3>
+          <p class="muted">Halaman promosi alat home workout dengan hero jelas, highlight benefit, dan CTA beli.</p>
+        </article>
+        <article class="card" aria-labelledby="p2-title">
+          <h3 id="p2-title">Landing Page — Anak Cerdas Printables</h3>
+          <p class="muted">Showcase produk coloring book & planner untuk orang tua, fokus kemudahan dan contoh halaman.</p>
+        </article>
+        <article class="card" aria-labelledby="p3-title">
+          <h3 id="p3-title">Landing Page — E-book Trading Pemula</h3>
+          <p class="muted">Copy singkat, layout clean, serta FAQ untuk menurunkan keberatan pembeli.</p>
+        </article>
+        <article class="card" aria-labelledby="p4-title">
+          <h3 id="p4-title">Landing Page — Promo Kedai Kopi</h3>
+          <p class="muted">Promo musiman dengan menu unggulan dan tombol pesan cepat.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-title">
+      <h2 id="exp-title">Pengalaman</h2>
+      <div class="experience">
+        <article class="card" aria-labelledby="e1-title">
+          <h3 id="e1-title">Waiter/Server — Wakaka Gading Serpong (2023)</h3>
+          <ul>
+            <li>Melayani 50+ tamu per hari dengan sikap ramah</li>
+            <li>Koordinasi order untuk mempercepat perputaran meja</li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="e2-title">
+          <h3 id="e2-title">Waiter/Server — NYX'S Lounge & Bar (2024)</h3>
+          <ul>
+            <li>Menjaga standar layanan di lingkungan cepat</li>
+            <li>Upselling menu untuk menaikkan nilai transaksi</li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="e3-title">
+          <h3 id="e3-title">Freelance — Pembuat Landing Page (2025–sekarang)</h3>
+          <ul>
+            <li>Menyusun struktur halaman, menulis copy dasar, dan merapikan layout</li>
+            <li>Fokus pada CTA yang jelas dan alur baca singkat</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Kontak</h2>
+      <p class="muted">Email dan LinkedIn akan ditambahkan nanti.</p>
+      <a class="whatsapp-btn" href="https://wa.me/628567912130" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp dengan Raihan Daffa">Chat via WhatsApp</a>
+    </section>
+  </main>
+</body>
+</html>
